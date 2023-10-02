@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../imagenes/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <section>
+        <header>
+            <img class="logo" src="../imagenes/logo.png" alt="">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="../index.html">Inicio</a></li>
+                    <li class="menu-item"><a href="../proyecto/mis-proyectos.html">Mis Proyectos</a></li>
+                    <li class="menu-item"><a href="../proyecto/mis-servicios.html">Mis Servicios</a></li>
+                    <li class="menu-item"><a href="../proyecto/mi-experiencia.html">Mi Experiencia</a></li>
+                    <li class="menu-item"><a href="../proyecto/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="contacto">
+            <h3>Contacto</h3>
+        </div>
+        <hr>
+    </section>
+    <form action="procesar-form.php" method="post" enctype="text/plain">
+        <div>
+            <label for="Nombre" class="info">
+                Nombre y Apellido:
+                <textarea name="" id="Nombre" cols="30" rows="3" placeholder="Ingrese su Nombre" required></textarea>
+            </label>
+        </div>
+        <div>
+            <label for="email" class="info">
+                E-mail:
+                <textarea name="" id="email" cols="30" rows="3" placeholder="Ingrese su E-mail" required></textarea>
+            </label>
+        </div>
+        <div>
+            <label for="consulta" class="info">
+                Consulta:
+                <textarea id="consulta" cols="50" rows="10" placeholder="Ingrese su Consulta" required></textarea>
+            </label>
+        </div>
+        <button type="submit" class="boton">Enviar</button>
+    </form>
+</body>
+
+</html>

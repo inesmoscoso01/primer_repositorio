@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter+Tight:wght@300&family=Red+Hat+Display&family=Sarabun&display=swap');
+*{
+	margin-top: 0.5cm;
+	margin-left: 0.5cm;
+	margin-bottom: 0.5cm;
+	margin-right: 0.5cm;
+	padding: 0;
+	background-color: #eaead9;
+}
+
+header{
+	position:static;
+}
+img.logo {
+	width: 130px;
+ 	height: 130px;
+	float:left;
+	display: flex;
+  }
+
+h1 {
+	color: #2e4942;
+	font-weight: normal;
+	font-size: 60px;
+	font-family: 'Red Hat Display', sans-serif;
+	text-align:center;
+  }
+h2 {
+	color: #2e4942;
+	font-weight: normal;
+	font-size: 40px;
+	font-family: 'Inter Tight', sans-serif;
+	text-align: center;
+  }
+h3 {
+	color: #2e4942;
+	font-weight: normal;
+	font-size: 40px;
+	font-family: 'Inter Tight', sans-serif;
+	text-align:center;
+  }
+
+.menu {
+	display: flex;
+	padding: 1rem;
+	justify-content: center;
+
+}
+.menu-list {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 1rem;
+	align-items: center;
+}
+
+.menu-item a{
+	color: #114B5F;
+	font-family: 'Inter Tight', sans-serif;
+	font-size:x-large;
+	
+}
+
+.acerca-de {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	
+}
+
+img.perfil {
+	width: 300px;
+	height: 300px;
+	margin-top: 20px;
+	margin-left: 80%;
+	
+  }
+
+.texto1 {
+	text-align:justify;
+	line-height: 30px;
+	width: 75%;
+	font-family: 'Comfortaa', cursive;
+	
+}
+.mis-proyectos {
+	text-align:justify;
+	line-height: 30px;
+	font-family: 'Comfortaa', cursive;
+	}
+
+.mis-servicios {
+	text-align:justify;
+	line-height: 30px;
+	font-family: 'Comfortaa', cursive;
+	}
+	
+.mi-experiencia {
+	text-align:justify;
+	line-height: 30px;
+	font-family: 'Comfortaa', cursive;
+}
+
+.contacto {
+	text-align:justify;
+	line-height: 30px;
+	font-family: 'Comfortaa', cursive;	
+}
+
+.info {
+	color: #2e4942;
+	font-weight: normal;
+	font-size: 30px;
+	font-family: 'Sarabun', sans-serif;
+	text-align:left;	
+	text-decoration: underline;
+}
+
+.boton {
+	border: 1px solid #2e518b;
+	padding: 10px;
+	background-color: #2e518b; 
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: 'Helvetica', sans-serif; 
+	border-radius: 50px;
+}
+
+
