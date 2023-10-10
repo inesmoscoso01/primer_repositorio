@@ -1,23 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter+Tight:wght@300&family=Red+Hat+Display&family=Sarabun&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter+Tight:wght@300&family=Montserrat:wght@300&family=Red+Hat+Display&family=Sarabun&display=swap');
 *{
-	margin-top: 0.5cm;
-	margin-left: 0.5cm;
-	margin-bottom: 0.5cm;
-	margin-right: 0.5cm;
+	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+.fondo{
 	background-color: #eaead9;
 }
 
-header{
-	position:static;
+.navegacion {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
 }
 img.logo {
-	width: 130px;
- 	height: 130px;
+	width: 150px;
+ 	height: 150px;
 	float:left;
 	display: flex;
-
   }
+.menu {
+	display: flex;
+	}
+.menu-list{
+	display: flex;
+	padding: 1rem;
+	list-style-type: none;
+	align-items:center;
+}
+
+.menu-item a{
+	padding: 1rem;
+	color: #114B5F;
+	font-family: 'Inter Tight', sans-serif;
+	font-size:x-large;
+}
 
 h1 {
 	color: #2e4942;
@@ -25,6 +42,7 @@ h1 {
 	font-size: 60px;
 	font-family: 'Red Hat Display', sans-serif;
 	text-align:center;
+	padding: 1rem;
   }
 h2 {
 	color: #2e4942;
@@ -32,68 +50,92 @@ h2 {
 	font-size: 40px;
 	font-family: 'Inter Tight', sans-serif;
 	text-align: center;
+	padding: 1rem;
   }
 h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: x-large;	
 	color: #2e4942;
-	font-weight: normal;
-	font-size: 40px;
-	font-family: 'Inter Tight', sans-serif;
-	text-align:center;
+	text-decoration: underline;
+	padding: 1rem;
   }
 
-.menu {
-	display: flex;
-	padding: 1rem;
-	justify-content: center;
-
-}
-.menu-list {
-	list-style-type: none;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
+.acerca-de {
+	grid-template-columns: 1fr, 2fr;
+	grid-template-rows: 1fr, 2fr;
+	grid-template-areas: "foto texto";
 	gap: 1rem;
-	align-items: center;
-}
-
-.menu-item a{
-	color: #114B5F;
-	font-family: 'Inter Tight', sans-serif;
-	font-size:x-large;
-}
-
-.menu-perfil {
-	width: 100%;
 	display: flex;
-	flex-direction: row-reverse;
-	flex-wrap: wrap;
-	justify-content: space-around;
 }
 
 img.perfil {
-	width: 300px;
-	height: 300px;
-	margin-top: 20px;	
+	grid-area: foto;
+	width: 400px;
+	height: 400px;
+	padding: 2rem;	
   }
-
 .texto1 {
+	grid-area: texto;
+	width: 90%;
+	padding: 2rem;
 	text-align:justify;
 	line-height: 30px;
-	width: 60%;
-	font-family: 'Comfortaa', cursive;	
+	font-family: 'Comfortaa', cursive;
+	flex-wrap: row;	
 }
 .mis-proyectos {
-	text-align:justify;
+	padding: 2rem;
+	display: grid;
+	height: 500px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "item1 item2 item3";
+	gap: 2rem;
+	}
+
+.grid {
+	border-radius: 1rem;
+}
+
+.grid1 {
+	grid-area: item1;
+	background-color: #DFBBB1;
+	padding: 1rem;
+}
+.img-proyecto1{
+	width: 400px;
+	height: 300px;
+}
+
+.grid2 {
+	grid-area: item2;
+	background-color: #BCD2EE;
+	padding: 1rem;
+}
+.img-proyecto2{
+	width: 400px;
+	height: 300px;	
+}
+.grid3 {
+	grid-area: item3;
+	background-color: #AFD0BF;
+	padding: 1rem;
+}
+.img-proyecto3{
+	width: 400px;
+	height: 300px;	
+}
+
+.mis-servicios {
+	text-align:center;
 	line-height: 30px;
 	font-family: 'Comfortaa', cursive;
 	}
 
-.mis-servicios {
-	text-align:justify;
-	line-height: 30px;
-	font-family: 'Comfortaa', cursive;
-	}
+.texto-servicios{
+	text-align: justify;
+	padding: 2rem;
+}
 	
 .mi-experiencia {
 	text-align:justify;
@@ -101,12 +143,21 @@ img.perfil {
 	font-family: 'Comfortaa', cursive;
 }
 
-.contacto {
+.texto-experiencia{
+	text-align: justify;
+	padding: 2rem;
+}
+
+.titulo-contacto {
 	text-align:justify;
 	line-height: 30px;
 	font-family: 'Comfortaa', cursive;	
 }
+.contacto{
+	padding: 2rem;
+	gap: 2rem;
 
+}
 .info {
 	color: #2e4942;
 	font-weight: normal;
@@ -114,6 +165,7 @@ img.perfil {
 	font-family: 'Sarabun', sans-serif;
 	text-align:left;	
 	text-decoration: underline;
+
 }
 
 .boton {
@@ -124,6 +176,27 @@ img.perfil {
 	text-transform: uppercase;
 	font-family: 'Helvetica', sans-serif; 
 	border-radius: 50px;
+	gap: 2rem;
 }
 
+@media screen and (max-width: 800px) {
+	.menu{
+		flex-wrap: nowrap;
 
+	}
+	.acerca-de{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr, 1fr;
+		grid-template-areas: "foto"
+							"texto";
+	}
+	
+	.mis-proyectos{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: "item1"
+							 "item2"
+							 "item3";
+	}
+
+}
