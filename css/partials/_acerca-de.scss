@@ -1,0 +1,24 @@
+.acerca-de {
+	grid-template-columns: 1fr, 2fr;
+	grid-template-rows: 1fr, 2fr;
+	grid-template-areas: "foto texto";
+	gap: 1rem;
+	display: grid;
+    .img-perfil {
+        display: flex;
+        grid-area: foto;
+        width: 400px;
+        height: 400px;
+        padding: 2rem;	
+      }
+    .texto-acerca-de {
+        display: flex;
+        grid-area: texto;
+        padding: 2rem;
+        text-align:justify;
+        line-height: 30px;
+        font-family: $fontMonserrat;
+        font-size: 20px;
+    }
+}
+

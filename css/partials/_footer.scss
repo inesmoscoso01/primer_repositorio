@@ -1,0 +1,28 @@
+.footer{
+	background-color: $colorFooter;
+	padding: 3rem;
+	text-align: end;
+	display: flex;
+    .link-footer{
+        text-decoration: underline;
+        line-height: 30px;
+        font-family: $fontComfortaa;
+        font-size: larger;
+        color: #fff;
+        padding-right: 1rem;
+    
+    }
+    .mail-footer{
+        text-decoration: none;
+        line-height: 30px;
+        font-family: $fontComfortaa;
+        font-size: larger;
+        color: #fff;
+        padding-right: 1rem;
+    
+    }
+    
+    .envelope{
+        text-decoration: none;
+    }
+}

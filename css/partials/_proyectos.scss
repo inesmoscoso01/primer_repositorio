@@ -1,0 +1,51 @@
+.proyectos {
+	padding: 2rem;
+	display: grid;
+	height: 500px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "item1 item2" 
+						 "item3 item4";
+	gap: 2rem;
+    .grid1 {
+        grid-area: item1;
+        background-color: #DFBBB1;
+        padding: 1rem;
+        .img-proyecto1 {
+            width: 400px;
+            height: 300px;
+            margin-left: 4rem;
+            }    
+    }
+    .grid2 {
+        grid-area: item2;
+        background-color: #BCD2EE;
+        padding: 1rem;
+        .img-proyecto2 {
+            width: 400px;
+            height: 300px;	
+            margin-left: 4rem;
+        }
+    }
+    .grid3 {
+        grid-area: item3;
+        background-color: #AFD0BF;
+        padding: 1rem;
+        .img-proyecto3 {
+            width: 500px;
+            height: 300px;	
+            margin-left: 2rem;
+        }
+    }
+    .grid4{
+        grid-area: item4;
+        background-color: #adb5bd;
+        padding: 1rem;
+        .img-proyecto4 {
+            width: 400px;
+            height: 300px;
+            margin-left: 4rem;
+        }
+    }
+
+}

@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter+Tight:wght@300&family=Montserrat:wght@300&family=Red+Hat+Display&family=Sarabun&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #eaead9;
+}
+
+header .navbar-nav {
+  background-color: #eaead9;
+}
+header .nav-item {
+  color: #114B5F;
+  font-family: "Inter Tight", sans-serif;
+  font-size: x-large;
+}
+
+.acerca-de {
+  grid-template-columns: 1fr, 2fr;
+  grid-template-rows: 1fr, 2fr;
+  grid-template-areas: "foto texto";
+  gap: 1rem;
+  display: grid;
+}
+.acerca-de .img-perfil {
+  display: flex;
+  grid-area: foto;
+  width: 400px;
+  height: 400px;
+  padding: 2rem;
+}
+.acerca-de .texto-acerca-de {
+  display: flex;
+  grid-area: texto;
+  padding: 2rem;
+  text-align: justify;
+  line-height: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+.proyectos {
+  padding: 2rem;
+  display: grid;
+  height: 500px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "item1 item2" "item3 item4";
+  gap: 2rem;
+}
+.proyectos .grid1 {
+  grid-area: item1;
+  background-color: #DFBBB1;
+  padding: 1rem;
+}
+.proyectos .grid1 .img-proyecto1 {
+  width: 400px;
+  height: 300px;
+  margin-left: 4rem;
+}
+.proyectos .grid2 {
+  grid-area: item2;
+  background-color: #BCD2EE;
+  padding: 1rem;
+}
+.proyectos .grid2 .img-proyecto2 {
+  width: 400px;
+  height: 300px;
+  margin-left: 4rem;
+}
+.proyectos .grid3 {
+  grid-area: item3;
+  background-color: #AFD0BF;
+  padding: 1rem;
+}
+.proyectos .grid3 .img-proyecto3 {
+  width: 500px;
+  height: 300px;
+  margin-left: 2rem;
+}
+.proyectos .grid4 {
+  grid-area: item4;
+  background-color: #adb5bd;
+  padding: 1rem;
+}
+.proyectos .grid4 .img-proyecto4 {
+  width: 400px;
+  height: 300px;
+  margin-left: 4rem;
+}
+
+.container {
+  max-width: 800px;
+  height: 600px;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
+  box-sizing: border-box;
+  padding: 40px;
+}
+.container p {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #486255;
+}
+.container .input,
+.container .msg .area {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
+}
+.container .login .input {
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+}
+.container .login .input:last-child {
+  margin-right: 0;
+}
+.container .msg .area {
+  height: 200px;
+}
+.container .btn {
+  width: 150px;
+  background: #486255;
+  height: 60px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.container .input:focus,
+.container .msg .area:focus {
+  border: 2px solid #486255;
+}
+
+.footer {
+  background-color: #7F9172;
+  padding: 3rem;
+  text-align: end;
+  display: flex;
+}
+.footer .link-footer {
+  text-decoration: underline;
+  line-height: 30px;
+  font-family: "Comfortaa", cursive;
+  font-size: larger;
+  color: #fff;
+  padding-right: 1rem;
+}
+.footer .mail-footer {
+  text-decoration: none;
+  line-height: 30px;
+  font-family: "Comfortaa", cursive;
+  font-size: larger;
+  color: #fff;
+  padding-right: 1rem;
+}
+.footer .envelope {
+  text-decoration: none;
+}/*# sourceMappingURL=estilo.css.map */
+
