@@ -173,4 +173,76 @@ header .nav-item .nav-item:hover {
 }
 .footer .envelope {
   text-decoration: none;
+}
+
+.experiencia {
+  line-height: 30px;
+  font-family: "Comfortaa", cursive;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "experiencia1 experiencia2" "experiencia1 experiencia3";
+  gap: 2rem;
+}
+.experiencia .grid-experiencia1 {
+  grid-area: experiencia1;
+  background-color: #c9cbcf;
+  padding: 1rem;
+  border-radius: 1rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.experiencia .texto-experiencia1 {
+  text-align: left;
+  padding: 1rem;
+  line-height: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+.experiencia .grid-experiencia2 {
+  grid-area: experiencia2;
+  background-color: #c9cbcf;
+  padding: 1rem;
+  border-radius: 1rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.experiencia .texto-experiencia2 {
+  text-align: left;
+  padding: 1rem;
+  line-height: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+.experiencia .grid-experiencia3 {
+  grid-area: experiencia3;
+  background-color: #c9cbcf;
+  padding: 1rem;
+  border-radius: 1rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.experiencia .texto-experiencia3 {
+  text-align: left;
+  padding: 1rem;
+  line-height: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+.servicios {
+  text-align: center;
+  line-height: 30px;
+  font-family: "Comfortaa", cursive;
+}
+.servicios .texto-servicios {
+  text-align: justify;
+  padding: 2rem;
+  line-height: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
 }/*# sourceMappingURL=estilo.css.map */
