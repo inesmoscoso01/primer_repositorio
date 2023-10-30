@@ -10,12 +10,18 @@
 
 .navbar-nav{
 	background-color: #eaead9;
+
 }
 .nav-item{
 	color: #114B5F;
 	font-family: 'Inter Tight', sans-serif;
 	font-size:x-large;
+	transition: all 1s;
 }
+.nav-item:hover{
+	width: 50%;
+}
+
 h1 {
 	color: #2e4942;
 	font-weight: normal;
@@ -51,9 +57,11 @@ h3 {
 .img-perfil {
 	display: flex;
 	grid-area: foto;
-	width: 400px;
+	width: 500px;
 	height: 400px;
-	padding: 1rem;	
+	margin: 1rem;
+	background-color: #a9bcd0;	
+	border-radius: 2rem;
   }
 .texto-acerca-de {
 	display: flex;
@@ -73,6 +81,7 @@ h3 {
 	grid-template-areas: "item1 item2" 
 						 "item3 item4";
 	gap: 2rem;
+	transition: all 1s;
 }
 	
 .grid1 {
@@ -81,6 +90,7 @@ h3 {
 	padding: 1rem;
 	border-radius: 1rem;
 	}
+
 .img-proyecto1{
 	width: 400px;
 	height: 300px;
@@ -139,18 +149,46 @@ h3 {
 }
 	
 .experiencia {
-	text-align:justify;
 	line-height: 30px;
 	font-family: 'Comfortaa', cursive;
+	padding: 2rem;
+	display: grid;
+	height: 500px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "experiencia1 experiencia2";
+	gap: 2rem;
 }
 
-.texto-experiencia{
-	text-align: justify;
-	padding: 2rem;
+.grid-experiencia1{
+	grid-area: experiencia1;
+	background-color: #c9cbcf;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+.texto-experiencia1{
+	text-align:left;
+	padding: 1rem;
 	line-height: 30px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
+	color: #fff;
 }
+.grid-experiencia2{
+	grid-area: experiencia2;
+	background-color: #c9cbcf;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+.texto-experiencia2{
+	text-align:left;
+	padding: 1rem;
+	line-height: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: #fff;
+}
+
+
 
 .container{
 	max-width: 800px;
@@ -245,7 +283,10 @@ h3 {
 }
 
 @media only screen and (max-width: 800px) {
-	
+	.img-perfil{
+		width: 400px;
+		height: 300px;
+	}
 	.acerca-de{
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr, 1fr;
