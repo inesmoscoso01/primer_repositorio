@@ -3,8 +3,14 @@ header {
         background-color: $mainColor;
     }
     .nav-item{
-        color: $colorNav;
-        font-family: $fontInterTight;
-        font-size: x-large;
+        color: #114B5F;
+        font-family: 'Inter Tight', sans-serif;
+        font-size:x-large;
+        transition: all 1s;
+        .nav-item:hover{
+            width: 200px;
+            background: #c9cbcf;
+        }
     }
+
 }

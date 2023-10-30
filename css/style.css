@@ -19,7 +19,8 @@
 	transition: all 1s;
 }
 .nav-item:hover{
-	width: 50%;
+	width: 200px;
+	background: #c9cbcf;
 }
 
 h1 {
@@ -153,9 +154,10 @@ h3 {
 	font-family: 'Comfortaa', cursive;
 	padding: 2rem;
 	display: grid;
-	height: 500px;
 	grid-template-columns: 1fr 1fr;
-	grid-template-areas: "experiencia1 experiencia2";
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "experiencia1 experiencia2"
+						 "experiencia1 experiencia3";
 	gap: 2rem;
 }
 
@@ -164,6 +166,7 @@ h3 {
 	background-color: #c9cbcf;
 	padding: 1rem;
 	border-radius: 1rem;
+	height: fit-content;
 }
 .texto-experiencia1{
 	text-align:left;
@@ -178,6 +181,7 @@ h3 {
 	background-color: #c9cbcf;
 	padding: 1rem;
 	border-radius: 1rem;
+	height: fit-content;
 }
 .texto-experiencia2{
 	text-align:left;
@@ -187,8 +191,21 @@ h3 {
 	font-size: 20px;
 	color: #fff;
 }
-
-
+.grid-experiencia3{
+	grid-area: experiencia3;
+	background-color: #c9cbcf;
+	padding: 1rem;
+	border-radius: 1rem;
+	height: fit-content;
+}
+.texto-experiencia3{
+	text-align:left;
+	padding: 1rem;
+	line-height: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: #fff;
+}
 
 .container{
 	max-width: 800px;
@@ -304,5 +321,15 @@ h3 {
 							 "item2"
 							 "item3"
 							 "item4";
+	}
+
+	.experiencia {
+		display: flex;
+		flex-direction: column;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: "experiencia1"
+							 "experiencia2"
+							 "experiencia3";	
 	}
 }

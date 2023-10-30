@@ -1,0 +1,59 @@
+.experiencia {
+	line-height: 30px;
+	font-family: $fontComfortaa;
+	padding: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "experiencia1 experiencia2"
+						 "experiencia1 experiencia3";
+	gap: 2rem;
+
+    .grid-experiencia1{
+        grid-area: experiencia1;
+        background-color: #c9cbcf;
+        padding: 1rem;
+        border-radius: 1rem;
+        height: fit-content;
+    }
+    .texto-experiencia1{
+        text-align:left;
+        padding: 1rem;
+        line-height: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: #fff;
+    }
+    .grid-experiencia2{
+        grid-area: experiencia2;
+        background-color: #c9cbcf;
+        padding: 1rem;
+        border-radius: 1rem;
+        height: fit-content;
+    }
+    .texto-experiencia2{
+        text-align:left;
+        padding: 1rem;
+        line-height: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: #fff;
+    }
+    .grid-experiencia3{
+        grid-area: experiencia3;
+        background-color: #c9cbcf;
+        padding: 1rem;
+        border-radius: 1rem;
+        height: fit-content;
+    }
+    .texto-experiencia3{
+        text-align:left;
+        padding: 1rem;
+        line-height: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: #fff;
+    }
+    
+}
+
