@@ -48,8 +48,8 @@ h3 {
   }
 
 .acerca-de {
-	grid-template-columns: 1fr, 2fr;
-	grid-template-rows: 1fr, 2fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	grid-template-areas: "foto texto";
 	gap: 1rem;
 	display: grid;
@@ -235,7 +235,7 @@ h3 {
 	font-size: 14px;
 	border-radius: 5px;
 	outline: none;
-	transform: all 0.5s ease;
+	transform: 0.5s ease;
   }
   
   .login .input{

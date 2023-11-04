@@ -21,8 +21,8 @@ header .nav-item .nav-item:hover {
 }
 
 .acerca-de {
-  grid-template-columns: 1fr, 2fr;
-  grid-template-rows: 1fr, 2fr;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr;
   grid-template-areas: "foto texto";
   gap: 1rem;
   display: grid;
