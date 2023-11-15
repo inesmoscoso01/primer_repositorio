@@ -3,9 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #eaead9;
 }
-
+.fondo{
+	background-color: #eaead9;
+}
 header .navbar-nav {
   background-color: #eaead9;
 }
@@ -15,83 +16,195 @@ header .nav-item {
   font-size: x-large;
   transition: all 1s;
 }
-header .nav-item .nav-item:hover {
+header .nav-item:hover {
   width: 200px;
   background: #c9cbcf;
 }
+h1 {
+	color: #2e4942;
+	font-weight: normal;
+	font-size: 60px;
+	font-family: 'Red Hat Display', sans-serif;
+	text-align:center;
+	gap: 1rem;
+  }
+h2 {
+	color: #2e4942;
+	font-weight: normal;
+	font-size: 40px;
+	font-family: 'Inter Tight', sans-serif;
+	text-align: center;
+	padding: 1rem;
+  }
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: x-large;	
+	color: #2e4942;
+	text-decoration: underline;
+	padding: 1rem;
+  }
 
 .acerca-de {
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 2fr;
-  grid-template-areas: "foto texto";
-  gap: 1rem;
-  display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "foto texto";
+	display: grid;
 }
 .acerca-de .img-perfil {
   display: flex;
-  grid-area: foto;
-  width: 400px;
-  height: 400px;
-  padding: 2rem;
+	grid-area: foto;
+	margin: 1rem;
+	width: 500px;
+	height: 400px;
+	background-color: #a9bcd0;	
+	border-radius: 2rem;
 }
 .acerca-de .texto-acerca-de {
   display: flex;
-  grid-area: texto;
-  padding: 2rem;
-  text-align: justify;
-  line-height: 30px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+	grid-area: texto;
+	padding: 1rem;
+	margin: 1rem;
+	text-align:justify;
+	line-height: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
 }
 
 .proyectos {
   padding: 2rem;
-  display: grid;
-  height: 500px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "item1 item2" "item3 item4";
-  gap: 2rem;
+	display: grid;
+	height: 900px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "item1 item2" 
+						 "item3 item4";
+	gap: 2rem;
+	transition: all 1s;
 }
 .proyectos .grid1 {
   grid-area: item1;
-  background-color: #DFBBB1;
-  padding: 1rem;
+	background-color: #DFBBB1;
+	padding: 1rem;
+	border-radius: 1rem;
+	align-items: center;
+	justify-content: center;
 }
 .proyectos .grid1 .img-proyecto1 {
   width: 400px;
-  height: 300px;
-  margin-left: 4rem;
+	height: 300px;
+	margin-left: 4rem;
+	margin: 0 auto;
 }
 .proyectos .grid2 {
   grid-area: item2;
-  background-color: #BCD2EE;
-  padding: 1rem;
+	background-color: #BCD2EE;
+	padding: 1rem;
+	border-radius: 1rem;
+	align-items: center;
+	justify-content: center;
 }
 .proyectos .grid2 .img-proyecto2 {
   width: 400px;
-  height: 300px;
-  margin-left: 4rem;
+	height: 300px;	
+	margin-left: 4rem;
+	margin: 0 auto;
 }
 .proyectos .grid3 {
   grid-area: item3;
-  background-color: #AFD0BF;
-  padding: 1rem;
+	background-color: #AFD0BF;
+	padding: 1rem;
+	border-radius: 1rem;
+	align-items: center;
+	justify-content: center;
 }
 .proyectos .grid3 .img-proyecto3 {
-  width: 500px;
-  height: 300px;
-  margin-left: 2rem;
+  width: 400px;
+	height: 300px;	
+	margin-left: 2rem;
+	margin: 0 auto;
 }
 .proyectos .grid4 {
   grid-area: item4;
-  background-color: #adb5bd;
-  padding: 1rem;
+	background-color: #adb5bd;
+	padding: 1rem;
+	border-radius: 1rem;
+	align-items: center;
+	justify-content: center;
 }
 .proyectos .grid4 .img-proyecto4 {
   width: 400px;
-  height: 300px;
-  margin-left: 4rem;
+	height: 300px;
+	margin-left: 4rem;
+	margin: 0 auto;
+}
+.servicios {
+	text-align:center;
+	line-height: 30px;
+	font-family: 'Comfortaa', cursive;
+	}
+
+  .servicios .texto-servicios{
+	text-align: justify;
+	padding: 2rem;
+	line-height: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+.experiencia {
+	line-height: 30px;
+	font-family: 'Comfortaa', cursive;
+	padding: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "experiencia1 experiencia2"
+						 "experiencia1 experiencia3";
+	gap: 2rem;
+}
+.experiencia .grid-experiencia1{
+	grid-area: experiencia1;
+	background-color: #c9cbcf;
+	padding: 1rem;
+	border-radius: 1rem;
+	height: fit-content;
+}
+.experiencia .grid-experiencia1 .texto-experiencia1{
+	text-align:left;
+	padding: 1rem;
+	line-height: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: #fff;
+}
+.experiencia .grid-experiencia2{
+	grid-area: experiencia2;
+	background-color: #c9cbcf;
+	padding: 1rem;
+	border-radius: 1rem;
+	height: fit-content;
+}
+.experiencia .grid-experiencia2 .texto-experiencia2{
+	text-align:left;
+	padding: 1rem;
+	line-height: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: #fff;
+}
+.experiencia .grid-experiencia3{
+	grid-area: experiencia3;
+	background-color: #c9cbcf;
+	padding: 1rem;
+	border-radius: 1rem;
+	height: fit-content;
+}
+.experiencia .grid-experiencia3 .texto-experiencia3{
+	text-align:left;
+	padding: 1rem;
+	line-height: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: #fff;
 }
 
 .container {
@@ -174,75 +287,43 @@ header .nav-item .nav-item:hover {
 .footer .envelope {
   text-decoration: none;
 }
+@media only screen and (max-width: 800px) {
+	.img-perfil{
+		width: 400px;
+		height: 300px;
+		margin: auto;
+	}
+	.acerca-de{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr, 1fr;
+		grid-template-areas: "foto"
+							"texto";
+		display: flex;
+		flex-direction: column;
+		align-items: center;					
+	}
 
-.experiencia {
-  line-height: 30px;
-  font-family: "Comfortaa", cursive;
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "experiencia1 experiencia2" "experiencia1 experiencia3";
-  gap: 2rem;
-}
-.experiencia .grid-experiencia1 {
-  grid-area: experiencia1;
-  background-color: #c9cbcf;
-  padding: 1rem;
-  border-radius: 1rem;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.experiencia .texto-experiencia1 {
-  text-align: left;
-  padding: 1rem;
-  line-height: 30px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  color: #fff;
-}
-.experiencia .grid-experiencia2 {
-  grid-area: experiencia2;
-  background-color: #c9cbcf;
-  padding: 1rem;
-  border-radius: 1rem;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.experiencia .texto-experiencia2 {
-  text-align: left;
-  padding: 1rem;
-  line-height: 30px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  color: #fff;
-}
-.experiencia .grid-experiencia3 {
-  grid-area: experiencia3;
-  background-color: #c9cbcf;
-  padding: 1rem;
-  border-radius: 1rem;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.experiencia .texto-experiencia3 {
-  text-align: left;
-  padding: 1rem;
-  line-height: 30px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  color: #fff;
-}
+	.proyectos{
+		display: flex;
+		flex-direction: column;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-areas: "item1"
+							 "item2"
+							 "item3"
+							 "item4";
+		align-items: center;					 
+		height: max-content;
+	}
 
-.servicios {
-  text-align: center;
-  line-height: 30px;
-  font-family: "Comfortaa", cursive;
+	.experiencia {
+		display: flex;
+		flex-direction: column;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: "experiencia1"
+							 "experiencia2"
+							 "experiencia3";	
+	}
 }
-.servicios .texto-servicios {
-  text-align: justify;
-  padding: 2rem;
-  line-height: 30px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-}/*# sourceMappingURL=estilo.css.map */
+/*# sourceMappingURL=estilo.css.map */
